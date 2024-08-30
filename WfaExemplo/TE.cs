@@ -19,5 +19,9 @@
         {
             return _base * 3;
         }
+        public override string ToString()
+        {
+            return $"Triangulo E. ({_base})";
+        }
     }
 }

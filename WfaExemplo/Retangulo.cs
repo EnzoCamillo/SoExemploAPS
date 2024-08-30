@@ -32,5 +32,9 @@ namespace WfaExemplo
         {
             return ((_base * 2) + (altura * 2));
         }
+        public override string ToString()
+        {
+            return $"Retangulo ({_base} , {altura})";
+        }
     }
 }

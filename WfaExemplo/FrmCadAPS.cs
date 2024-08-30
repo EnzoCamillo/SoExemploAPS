@@ -44,6 +44,7 @@ namespace WfaExemplo
             ExibirAltura(false);
             ExibirRaio(false);
             cmbTriangulo.Visible = false;
+            LimparCampos();
         }
 
 
@@ -53,6 +54,7 @@ namespace WfaExemplo
             ExibirAltura(true);
             ExibirRaio(false);
             cmbTriangulo.Visible = false;
+            LimparCampos();
         }
         private void SelecionarCircunferencia()
         {
@@ -60,6 +62,7 @@ namespace WfaExemplo
             ExibirAltura(false);
             ExibirRaio(true);
             cmbTriangulo.Visible = false;
+            LimparCampos();
         }
 
         private void ExibirAltura(bool visivel)
@@ -75,10 +78,20 @@ namespace WfaExemplo
         {
             lblBase.Visible = txtBase.Visible = visivel;
         }
+        private void LimparCampos()
+        {
+            txtAltura.Text = "";
+            txtBase.Text = "";
+            txtRaio.Text = "";
+        }
 
         private void SelecionarTriangulo()
         {
             cmbTriangulo.Visible = cmbForma.Text.Equals("Triangulo");
+            ExibirBase(false);
+            ExibirAltura(false);
+            ExibirRaio(false);
+            LimparCampos();
         }
 
         private void btnCriar_Click(object sender, EventArgs e)
@@ -161,9 +174,11 @@ namespace WfaExemplo
         {
             if (cmbForma.Text.Equals("Quadrado"))
             {
+                double baseV = 0;
+                if (txtBase.Text != "") { baseV = Convert.ToDouble(txtBase.Text); }
                 FormaGeometrica quadrado = new Quadrado()
                 {
-                    Base = Convert.ToDouble(txtBase.Text)
+                    Base = baseV
                 };
                 cmbObjetos.Items.Add(quadrado);
             }
@@ -172,10 +187,13 @@ namespace WfaExemplo
         {
             if (cmbForma.Text.Equals("Retangulo"))
             {
+                double baseV = 0, alturaV = 0;
+                if (txtBase.Text != "") { baseV = Convert.ToDouble(txtBase.Text); }
+                if (txtAltura.Text != "") { alturaV = Convert.ToDouble(txtAltura.Text); }
                 FormaGeometrica retangulo = new Retangulo()
                 {
-                    Base = Convert.ToDouble(txtBase.Text),
-                    Altura = Convert.ToDouble(txtAltura.Text)
+                    Base = baseV,
+                    Altura = alturaV
                 };
                 cmbObjetos.Items.Add(retangulo);
             }
@@ -184,9 +202,11 @@ namespace WfaExemplo
         {
             if (cmbForma.Text.Equals("Circunferencia"))
             {
+                double raioV = 0;
+                if (txtRaio.Text != "") { raioV = Convert.ToDouble(txtRaio.Text); }
                 FormaGeometrica circunferencia = new Circunferencia()
                 {
-                    Raio = Convert.ToDouble(txtRaio.Text)
+                    Raio = raioV
                 };
                 cmbObjetos.Items.Add(circunferencia);
             }

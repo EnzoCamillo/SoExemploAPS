@@ -55,7 +55,7 @@
             "Triangulo",
             "Circunferencia"});
             this.cmbForma.Location = new System.Drawing.Point(8, 23);
-            this.cmbForma.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbForma.Margin = new System.Windows.Forms.Padding(4);
             this.cmbForma.Name = "cmbForma";
             this.cmbForma.Size = new System.Drawing.Size(160, 24);
             this.cmbForma.TabIndex = 0;
@@ -78,9 +78,9 @@
             this.groupBox1.Controls.Add(this.cmbTriangulo);
             this.groupBox1.Controls.Add(this.cmbForma);
             this.groupBox1.Location = new System.Drawing.Point(16, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(667, 241);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
@@ -89,7 +89,7 @@
             // txtPerimetro
             // 
             this.txtPerimetro.Location = new System.Drawing.Point(408, 133);
-            this.txtPerimetro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPerimetro.Margin = new System.Windows.Forms.Padding(4);
             this.txtPerimetro.Name = "txtPerimetro";
             this.txtPerimetro.ReadOnly = true;
             this.txtPerimetro.Size = new System.Drawing.Size(132, 22);
@@ -98,7 +98,7 @@
             // txtArea
             // 
             this.txtArea.Location = new System.Drawing.Point(409, 75);
-            this.txtArea.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtArea.Margin = new System.Windows.Forms.Padding(4);
             this.txtArea.Name = "txtArea";
             this.txtArea.ReadOnly = true;
             this.txtArea.Size = new System.Drawing.Size(132, 22);
@@ -128,7 +128,7 @@
             // 
             this.cmbObjetos.FormattingEnabled = true;
             this.cmbObjetos.Location = new System.Drawing.Point(469, 22);
-            this.cmbObjetos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbObjetos.Margin = new System.Windows.Forms.Padding(4);
             this.cmbObjetos.Name = "cmbObjetos";
             this.cmbObjetos.Size = new System.Drawing.Size(160, 24);
             this.cmbObjetos.TabIndex = 9;
@@ -137,7 +137,7 @@
             // btnCriar
             // 
             this.btnCriar.Location = new System.Drawing.Point(361, 20);
-            this.btnCriar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCriar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCriar.Name = "btnCriar";
             this.btnCriar.Size = new System.Drawing.Size(100, 28);
             this.btnCriar.TabIndex = 8;
@@ -148,7 +148,7 @@
             // txtRaio
             // 
             this.txtRaio.Location = new System.Drawing.Point(55, 194);
-            this.txtRaio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRaio.Margin = new System.Windows.Forms.Padding(4);
             this.txtRaio.Name = "txtRaio";
             this.txtRaio.Size = new System.Drawing.Size(132, 22);
             this.txtRaio.TabIndex = 7;
@@ -157,7 +157,7 @@
             // txtAltura
             // 
             this.txtAltura.Location = new System.Drawing.Point(55, 137);
-            this.txtAltura.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAltura.Margin = new System.Windows.Forms.Padding(4);
             this.txtAltura.Name = "txtAltura";
             this.txtAltura.Size = new System.Drawing.Size(132, 22);
             this.txtAltura.TabIndex = 6;
@@ -166,7 +166,7 @@
             // txtBase
             // 
             this.txtBase.Location = new System.Drawing.Point(55, 75);
-            this.txtBase.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBase.Margin = new System.Windows.Forms.Padding(4);
             this.txtBase.Name = "txtBase";
             this.txtBase.Size = new System.Drawing.Size(132, 22);
             this.txtBase.TabIndex = 5;
@@ -213,7 +213,7 @@
             "Isosceles",
             "Reto"});
             this.cmbTriangulo.Location = new System.Drawing.Point(179, 22);
-            this.cmbTriangulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbTriangulo.Margin = new System.Windows.Forms.Padding(4);
             this.cmbTriangulo.Name = "cmbTriangulo";
             this.cmbTriangulo.Size = new System.Drawing.Size(160, 24);
             this.cmbTriangulo.TabIndex = 1;
@@ -227,7 +227,7 @@
             this.ClientSize = new System.Drawing.Size(696, 265);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FrmCadAPS";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

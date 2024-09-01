@@ -226,14 +226,17 @@ namespace WfaExemplo
                 case "Reto":
                     ExibirBase(true);
                     ExibirAltura(true);
+                    LimparCampos();
                     break;
                 case "Isosceles":
                     ExibirBase(true);
                     ExibirAltura(true);
+                    LimparCampos();
                     break;
                 case "Equilatero":
                     ExibirBase(true);
                     ExibirAltura(false);
+                    LimparCampos();
                     break;
             }
         }
